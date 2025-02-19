@@ -1,0 +1,200 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4b453c;
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.action-buttons .btn {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-buttons .btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Fuel Gauges Section */
+.fuel-gauges {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.fuel-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+}
+
+.fuel-card img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.fuel-card h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.fuel-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Tables Section */
+.tables-section {
+    padding: 20px;
+}
+
+.tables-section h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stock-table th, .stock-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.stock-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.stock-table td {
+    background-color: #fff;
+}
+
+/* Gauge Container */
+.gauge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Circular Gauge */
+.gauge {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#007bff 0% 0%, #e0e0e0 0% 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fill for the Gauge */
+.gauge-fill {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#007bff 0% 0%, #e0e0e0 0% 100%);
+    transform: rotate(-90deg); /* Rotate for correct start */
+    transform-origin: center;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Cover for the Gauge */
+.gauge-cover {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Parent container for gauges */
+.gauge-container-row {
+    display: flex;
+    justify-content: center; /* Center the gauges horizontally */
+    align-items: center; /* Align the gauges vertically */
+    gap: 40px; /* Space between the gauges */
+    margin: 30px 0; /* Space above and below the gauges */
+}
+
+/* Individual gauge box */
+.gauge-box {
+    display: flex;
+    flex-direction: column; /* Stack gauge and text */
+    align-items: center; /* Center the content inside the box */
+    text-align: center;
+}
+

@@ -1,0 +1,118 @@
+html{
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4c4638; /* Matches the brown-gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+    flex: 1;
+    background-image: url('https://example.com/total-station-image.jpg'); /* Add the actual image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.form-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.form-section img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.form-section h1 {
+    font-size: 1.2em;
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Input Field Styling */
+/* Center the form fields */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically if needed */
+    width: 100%; /* Ensure the form takes full width */
+}
+
+/* Input Field Styling */
+.form-section input {
+    width: 100%; /* Take full width of the container */
+    max-width: 300px; /* Limit the width */
+    padding: 12px;
+    margin: 10px 0;
+    border: none; /* Remove default borders */
+    border-bottom: 2px solid #ccc; /* Bottom border only */
+    border-radius: 0; /* No rounded corners */
+    font-size: 16px;
+    background-color: transparent; /* Transparent background */
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-section input:focus {
+    border-bottom: 2px solid #007bff; /* Blue bottom border on focus */
+}
+
+
+
+.form-section a {
+    display: inline-block;
+    margin-top: 10px; /* Space below the password field */
+    margin-left: 50%; /* Align to the right */
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-section a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.form-section button {
+    display: block;
+    width: 50%;
+    max-width: 300px;
+    margin: 20px auto 0; /* Center the button and add space above */
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 25px; /* Fully rounded button */
+    background-color: white;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.form-section button:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
